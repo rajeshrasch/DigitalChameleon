@@ -4,11 +4,12 @@ const mongoose = require("mongoose");
 const passportConfig = require("./lib/passportConfig");
 const cors = require("cors");
 const fs = require("fs");
+require('dotenv').config();
 
 // MongoDB
 mongoose
   .connect(
-    "mongodb+srv://DC:DigitalChameleon@digitalchameleon.9befs.mongodb.net/digital_chameleon?retryWrites=true&w=majority",
+    `mongodb+srv://${process.env.NODE_MONGODB_USERNAME}:${process.env.NODE_MONGODB_PASSWORD}@digitalchameleon.9befs.mongodb.net/digital_chameleon?retryWrites=true&w=majority`,
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
