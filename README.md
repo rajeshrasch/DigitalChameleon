@@ -83,4 +83,7 @@ Email: emailforrajesh@gmail.com
 http://rajeshsurapaneni.herokuapp.com
 
 ## Note
-Hard reload if the page does not load for the first time
+Hard reload if the page does not load for the first time or open in incognito mode
+
+## Important
+Please paste .env file which is shared seperately inside /backend/.env folder
